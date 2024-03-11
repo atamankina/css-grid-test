@@ -1,7 +1,8 @@
 .container {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 20px;
 }
@@ -10,4 +11,27 @@
     background-color: blueviolet;
     color: white;
     font-weight: bold;
+}
+
+.one {
+    background-color: rgb(106, 176, 37);
+    grid-column: span 2;
+    order: 1;
+}
+
+.two {
+    background-color: chocolate;
+    grid-column: span 2;
+    grid-row: span 2;
+    order: 3;
+}
+
+.three {
+    background-color: rgb(54, 212, 212);
+    grid-row: span 3;
+    order: 2;
+}
+
+.four {
+    order: 4;
 }
