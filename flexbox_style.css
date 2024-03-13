@@ -1,0 +1,32 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.item {
+    padding: 30px;
+    font-size: 30px;
+    flex-basis: 250px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
